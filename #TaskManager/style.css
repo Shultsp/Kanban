@@ -1,0 +1,170 @@
+h3{
+    border: 1px;
+    border-radius: 8px;
+    padding: 8px;
+    background: linear-gradient(90deg, #a8cddf, #cbbad6);
+}
+
+/*table{
+    display: block;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 8px;
+    background: linear-gradient(90deg, #0072ac, #6600aa);
+    float: left;
+}
+
+td{
+    display: block;
+    margin: 5px;
+    border-radius: 8px;
+    min-height: 32px;
+    padding: 8px;
+    background: linear-gradient(90deg, #a8cddf, #cbbad6);
+    float: left;
+}*/
+
+textarea{
+    max-width: 500px;
+}
+
+span{
+    color: #a8cddf;
+}
+
+a{
+    color: #a8cddf;
+    text-decoration-line: none;
+    font-size: 18pt;
+}
+
+tr{
+    height: 32px;
+    width: 400px;
+    margin: 5px;
+    padding: 8px;
+}
+
+.board{
+    width: 400px;
+    height: 116px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 8px;
+    background: linear-gradient(90deg, #0072ac, #6600aa);
+    float: left;
+}
+
+.button{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    border-radius: 8px;
+    padding: 8px;
+    background: linear-gradient(90deg, #a8cddf, #cbbad6);
+    float: right;
+    
+}
+
+.question{
+    width: 170px;
+    min-height: 20px;
+}
+
+.answer{
+    max-width: 512px;
+    min-height: 20px;
+}
+
+.boardcol{
+    float: left;
+    margin: 5px;
+    border: 1px;
+    border-radius: 8px;
+    width: 24.3%;
+    min-width: 250px;
+    min-height: 148px;
+    height: calc(100% - 90px);
+    background: linear-gradient(90deg, #a8cddf, #cbbad6);
+}
+
+.colname{
+    margin-top: 10px;
+    margin-left: 20px;
+    float: none;
+}
+
+.priority{
+    margin: 5px;
+    width: calc(100% - 10px);
+}
+
+.high{background: #c24747;}
+
+.normal{background: #ffb545;}
+
+.low{background: #47c257;}
+
+.task{
+    background: #eeeeee;
+    min-height: 100px;
+    width: calc(100% - 15px);
+    margin-left: 5px;
+    padding: 5px;
+}
+
+#lastbutton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#addboard{
+    height: 138px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#prompt-form {
+    display: inline-block;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+    background: white;
+    vertical-align: middle;
+}
+
+#prompt-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#prompt-form-container:before {
+    display: inline-block;
+    height: 100%;
+    content: '';
+    vertical-align: middle;
+}
+
+#cover-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.3;
+}
+
+#prompt-form input[name="text"] {
+    display: block;
+    margin: 5px;
+    width: 187px;
+}

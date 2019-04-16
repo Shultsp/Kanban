@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <h3> Team Kanban Board </h3>
+  </head>
+
+  <body>
+    <table class="board">
+      <tr>
+        <td>
+          <strong><a href=board.html>Table One</a></strong>
+        </td>
+        <td class="button settings">
+          <a href="settings.html"><img src="images/My_Set.png" alt="Settings"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Created: 31.12.2018 23:55</span>
+          <br>
+          <span>Edited: 31.12.2018 23:55</span>
+        </td>
+        <td class="button delete">
+          <img src="images/My_Del.png" alt="Delete">
+        </td>
+      </tr>
+    </table>
+
+    <table class="board">
+      <tr>
+        <td>
+          <strong><a href=board.html>Table Two</a></strong>
+        </td>
+        <td class="button settings">
+          <a href="settings.html"><img src="images/My_Set.png" alt="Settings"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Created: 31.12.2018 23:55</span>
+          <br>
+          <span>
+            <script>
+              var d = new Date();
+              document.write("Edited: "+d.getDate()+"."+d.getMonth()+"."
+              +d.getFullYear()+" "+d.getHours()+":"+d.getMinutes());
+            </script>
+          </span>
+        </td>
+        <td class="button delete">
+          <img src="images/My_Del.png" alt="Delete">
+        </td>
+      </tr>
+    </table>
+
+   <!--  <button class="board" id="addboard" onclick="showPrompt('New board: ')">
+      <img src="images/My_Add.png">
+    </button>
+ -->
+    <button class="board" id="addboard" onclick="intoTheVoid()">
+      <img src="images/My_Add.png">
+    </button>
+
+    <div class="button" id="lastbutton">
+      <a href="newtask.html"><img src="images/My_Add.png" alt="AddTask"></a>
+    </div>
+
+    <div id="prompt-form-container">
+      <form id="prompt-form" action="board.html">
+        <div id="prompt-message"></div>
+        <input name="text" type="text" pattern="[A-Za-z]{3,25}">
+        <input type="submit" value="Ok">
+        <input type="button" name="cancel" value="Cancel">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Team Kanban Board</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="loadTasksFromLocalStorage()">
+        <h3> Team Kanban Board </h3>
+        <div class="boardcol" id="todo">
+            <div class="colname"><strong>1</strong> To Do</div>
+            <!-- <div class="priority high">
+                <div class="task">
+                    <a href="settings.html">MyTask</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="boardcol" id="inprogress">
+            <div class="colname"><strong>2</strong> In Progress</div>
+        </div>
+        <div class="boardcol" id="review">
+            <div class="colname"><strong>3</strong> Review</div>
+        </div>
+        <div class="boardcol" id="done">
+            <div class="colname"><strong>4</strong> Done!</div>
+        </div>
+        <div class="button" id="lastbutton">
+            <a href="index.html"><img src="images/My_Set.png" alt="Go Back"></a>
+        </div>       
+    </body>
+</html>

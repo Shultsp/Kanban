@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <h3> Add New Task </h3>
+    </head>
+    <body>
+        <form id="myform" name="task" onsubmit="newTaskToLocalStorage()" action="board.html">
+            <table>
+                <tr>
+                    <td class="question">Task name: </td>
+                    <td class="answer"><input name="taskname" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td class="question">Task description: </td>
+                    <td class="answer"><textarea name="taskdescription" placeholder="Description"
+                        rows="4"></textarea></td> 
+                </tr>
+                <tr>
+                    <td class="question">Priority: </td>
+                    <td class="answer">
+                        <select name="priority">
+                            <option value="high">high</option>
+                            <option value="normal" selected>normal</option>
+                            <option value="low">low</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="question">Marks: </td>
+                    <td class="answer"><input name="marks" placeholder="Marks"></td>
+                </tr>
+                <tr>
+                    <td class="question">Assigned to: </td>
+                    <td class="answer"><input name="assigned" placeholder="Worker name"></td>
+                </tr>
+                <tr>
+                    <td class="question">Task type: </td>
+                    <td class="answer">
+                        <select name="type">
+                            <option value="feature" selected>Feature</option>
+                            <option value="defect">Defect</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="question">Related board: </td>
+                    <td class="answer">
+                        <select name="board">
+                            <option value="boardone" selected>Board One</option>
+                            <option value="boardtwo" >Board Two</option>
+                        </select>
+                    </td>
+                </tr>                
+                <tr>
+                    <td>
+                        <input type="image" src="images/My_Add.png" alt="Add Task"
+                        width="32" height="32">
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>
